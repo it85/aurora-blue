@@ -8,6 +8,5 @@ class TransportReaderModule extends AbstractModule {
     @Override
     public void configure() {
         bind(GenericReader.class).in(Singleton.class);
-        bind(RawReader.class).to(ChronicleReader.class).in(Singleton.class);
     }
 }

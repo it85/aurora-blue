@@ -22,7 +22,7 @@ public class NetworkGuiceTest {
 
     @Before
     public void setUp() {
-        injector = Guice.createInjector(new NetworkModule());
+        injector = Guice.createInjector(new ConnectionModule());
     }
 
     /**

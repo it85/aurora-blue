@@ -1,6 +1,8 @@
 package common.transport.read;
 
 import com.google.inject.Inject;
+import external.ipc.WireReader;
+import external.ipc.WireDataHandler;
 
 /**
  * This is the primary entry point for any event-driven component. The client should instantiate and start a new thread
@@ -8,11 +10,11 @@ import com.google.inject.Inject;
  */
 final class GenericReader implements Runnable {
 
-    private final RawReader reader;
+    private final WireReader reader;
     private final WireDataHandler handler;
 
     @Inject
-    GenericReader(RawReader reader,
+    GenericReader(WireReader reader,
                   WireDataHandler handler) {
         this.reader = reader;
         this.handler = handler;

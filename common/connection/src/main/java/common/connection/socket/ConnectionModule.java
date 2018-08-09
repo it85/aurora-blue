@@ -4,7 +4,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
 import external.connection.ExternalSocketModule;
 
-public final class NetworkModule extends AbstractModule {
+public final class ConnectionModule extends AbstractModule {
 
     @Override
     protected void configure() {

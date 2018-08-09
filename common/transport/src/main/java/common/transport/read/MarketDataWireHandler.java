@@ -1,11 +1,27 @@
 package common.transport.read;
 
-import java.nio.ByteBuffer;
+import com.google.inject.Inject;
+import common.core.message.Message;
+import external.ipc.WireDataHandler;
 
-public class MarketDataWireHandler implements WireDataHandler {
+final class MarketDataWireHandler implements WireDataHandler {
+
+    private final MarketDataEventDispatcher dispatcher;
+
+    @Inject
+    MarketDataWireHandler(MarketDataEventDispatcher dispatcher) {
+        this.dispatcher = dispatcher;
+    }
 
     @Override
-    public void handle(ByteBuffer buffer) {
-        // TODO: call MarketDataEventDispatcher
+    public void handle(Message message) {
+        final short id = message.header().id();
+
+        switch (id) {
+            case 1:
+                break;
+            default:
+
+        }
     }
 }
