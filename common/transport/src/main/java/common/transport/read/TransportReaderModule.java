@@ -1,14 +1,13 @@
 package common.transport.read;
 
 import com.google.inject.AbstractModule;
-import com.google.inject.assistedinject.FactoryModuleBuilder;
+import com.google.inject.Singleton;
 
-public class TransportReaderModule extends AbstractModule {
+class TransportReaderModule extends AbstractModule {
 
     @Override
     public void configure() {
-        install(new FactoryModuleBuilder()
-                .implement(GenericReader.class, GenericReader.class)
-                .build(GenericReaderFactory.class));
+        bind(GenericReader.class).in(Singleton.class);
+        bind(RawReader.class).to(ChronicleReader.class).in(Singleton.class);
     }
 }

@@ -1,4 +1,4 @@
-package common.connection.socket;
+package external.connection;
 
 import common.core.message.MessageHandler;
 import org.apache.logging.log4j.LogManager;

@@ -1,7 +1,6 @@
 package common.transport.read;
 
 import com.google.inject.Inject;
-import com.google.inject.assistedinject.Assisted;
 
 /**
  * This is the primary entry point for any event-driven component. The client should instantiate and start a new thread
@@ -14,7 +13,7 @@ final class GenericReader implements Runnable {
 
     @Inject
     GenericReader(RawReader reader,
-                  @Assisted WireDataHandler handler) {
+                  WireDataHandler handler) {
         this.reader = reader;
         this.handler = handler;
     }

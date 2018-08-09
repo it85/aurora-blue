@@ -1,11 +1,11 @@
-package common.connection.socket;
+package external.connection;
 
 import common.core.message.MessageHandler;
 
 /**
  * A web socket used to open a TCP connection with an endpoint and handles messages of type T.
  */
-interface Socket<T> {
+public interface Socket<T> {
 
     void registerHandler(MessageHandler<T> handler);
 
