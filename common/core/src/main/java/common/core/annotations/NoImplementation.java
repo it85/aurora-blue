@@ -1,4 +1,4 @@
-package annotations;
+package common.core.annotations;
 
 /**
  * Marks a class/interface/method to indicate there's no valid implementation

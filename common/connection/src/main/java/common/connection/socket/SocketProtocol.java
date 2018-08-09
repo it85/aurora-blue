@@ -1,4 +1,4 @@
-package common.network;
+package common.connection.socket;
 
 /**
  * Encapsulates connection details to a particular endpoint. Every SocketProtocol supplies it's connection URI {@link #endpoint()}

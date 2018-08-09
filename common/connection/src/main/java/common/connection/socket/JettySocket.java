@@ -1,6 +1,6 @@
-package common.network;
+package common.connection.socket;
 
-import common.message.MessageHandler;
+import common.core.message.MessageHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
@@ -22,7 +22,7 @@ import java.util.concurrent.Future;
 @SuppressWarnings("WeakerAccess")
 @WebSocket(maxTextMessageSize = 1048576, maxBinaryMessageSize = 1048576)
 // TODO: make the max message size limit more robust
-public final class JettySocket implements Socket<String> {
+public class JettySocket implements Socket<String> {
 
     private static final Logger LOG = LogManager.getLogger(JettySocket.class);
 
@@ -77,21 +77,25 @@ public final class JettySocket implements Socket<String> {
         }
     }
 
+    @SuppressWarnings("unused")
     @OnWebSocketConnect
     public void onConnect(Session sess) {
         LOG.info("Session connected");
     }
 
+    @SuppressWarnings("unused")
     @OnWebSocketClose
     public void onClose(int statusCode, String reason) {
         LOG.info("Socket closing. code={}, reason={})", statusCode, reason);
     }
 
+    @SuppressWarnings("unused")
     @OnWebSocketError
     public void onError(Throwable cause) {
         LOG.error("Socket encountered an error {}", cause);
     }
 
+    @SuppressWarnings("unused")
     @OnWebSocketMessage
     public void onMessage(String message) {
         handler.handle(message);

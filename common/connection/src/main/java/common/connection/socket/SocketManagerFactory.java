@@ -1,7 +1,7 @@
-package common.network;
+package common.connection.socket;
 
-import annotations.NoImplementation;
-import common.message.MessageHandler;
+import common.core.annotations.NoImplementation;
+import common.core.message.MessageHandler;
 
 @NoImplementation
 public interface SocketManagerFactory {

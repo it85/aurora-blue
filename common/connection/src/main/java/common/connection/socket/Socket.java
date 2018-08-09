@@ -1,6 +1,6 @@
-package common.network;
+package common.connection.socket;
 
-import common.message.MessageHandler;
+import common.core.message.MessageHandler;
 
 /**
  * A web socket used to open a TCP connection with an endpoint and handles messages of type T.
