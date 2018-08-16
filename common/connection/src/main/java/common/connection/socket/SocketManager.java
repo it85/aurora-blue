@@ -1,9 +1,7 @@
 package common.connection.socket;
 
 import com.google.inject.Inject;
-import com.google.inject.assistedinject.Assisted;
 import common.core.message.MessageHandler;
-import external.connection.Socket;
 
 /**
  * Manipulates socket connections and is responsible for bringing up/shutting down sessions. This particular implementation
@@ -13,15 +11,17 @@ import external.connection.Socket;
 public final class SocketManager {
 
     private final Socket<String> socket;
-    private final SocketProtocol protocol;
+
+    private SocketProtocol protocol;
 
     @Inject
-    public SocketManager(Socket<String> socket,
-                         @Assisted MessageHandler<String> handler,
-                         @Assisted SocketProtocol protocol) {
+    SocketManager(Socket<String> socket) {
         this.socket = socket;
-        this.protocol = protocol;
+    }
+
+    public void init(MessageHandler<String> handler, SocketProtocol protocol) {
         this.socket.registerHandler(handler);
+        this.protocol = protocol;
     }
 
     /**

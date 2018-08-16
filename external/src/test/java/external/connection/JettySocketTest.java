@@ -1,5 +1,6 @@
 package external.connection;
 
+import common.connection.socket.Socket;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;

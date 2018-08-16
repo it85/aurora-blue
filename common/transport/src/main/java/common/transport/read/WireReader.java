@@ -1,4 +1,4 @@
-package external.ipc;
+package common.transport.read;
 
 public interface WireReader {
 

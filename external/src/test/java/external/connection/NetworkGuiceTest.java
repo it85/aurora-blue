@@ -1,11 +1,12 @@
-package common.connection.socket;
+package external.connection;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
-import external.connection.JettySocket;
-import external.connection.Socket;
+import common.connection.socket.ConnectionModule;
+import common.connection.socket.Socket;
+import common.connection.socket.SocketManagerFactory;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -37,7 +38,7 @@ public class NetworkGuiceTest {
     }
 
     /**
-     * Assert that we're able to get Guice to provide multiple unique instances of {@link Socket<String>}
+     * Assert that we're able to get Guice to provide multiple unique instances of {@link Socket <String>}
      */
     @Test
     public void socketInjectionTest() {

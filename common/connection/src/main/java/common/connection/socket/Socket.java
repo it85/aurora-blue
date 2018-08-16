@@ -1,4 +1,4 @@
-package external.connection;
+package common.connection.socket;
 
 import common.core.message.MessageHandler;
 

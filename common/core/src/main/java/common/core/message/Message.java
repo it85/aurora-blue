@@ -14,4 +14,9 @@ public interface Message {
      */
     ByteBuffer payload();
 
+    /**
+     * @return the entire message, header included, as a {@link ByteBuffer}
+     */
+    ByteBuffer serialize();
+
 }

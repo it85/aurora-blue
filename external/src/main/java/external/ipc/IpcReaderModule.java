@@ -3,6 +3,8 @@ package external.ipc;
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
+import common.transport.read.WireReader;
+import common.transport.read.WireReaderFactory;
 
 public class IpcReaderModule extends AbstractModule {
 

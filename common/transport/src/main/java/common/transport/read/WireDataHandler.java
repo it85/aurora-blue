@@ -1,4 +1,4 @@
-package external.ipc;
+package common.transport.read;
 
 import common.core.message.Message;
 

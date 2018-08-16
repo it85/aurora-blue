@@ -2,7 +2,6 @@ package common.transport.read;
 
 import com.google.inject.Inject;
 import common.core.message.Message;
-import external.ipc.WireDataHandler;
 
 final class MarketDataWireHandler implements WireDataHandler {
 

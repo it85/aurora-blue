@@ -1,7 +1,5 @@
 package common.core.message;
 
-import com.google.inject.Inject;
-
 import java.nio.ByteBuffer;
 
 /**
@@ -11,7 +9,6 @@ public class MessagingFactory {
 
     private final MutableMessage message;
 
-    @Inject
     public MessagingFactory() {
         message = null;
     }
