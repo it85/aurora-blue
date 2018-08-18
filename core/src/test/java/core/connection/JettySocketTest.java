@@ -1,4 +1,4 @@
-package external.connection;
+package core.connection;
 
 import common.connection.socket.Socket;
 import org.junit.Before;

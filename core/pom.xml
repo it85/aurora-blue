@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>external</artifactId>
+    <artifactId>core</artifactId>
 
     <properties>
         <apache.http.version>4.5.3</apache.http.version>

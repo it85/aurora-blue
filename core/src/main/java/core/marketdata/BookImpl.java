@@ -1,4 +1,4 @@
-package external.marketdata;
+package core.marketdata;
 
 import common.app.marketdata.Book;
 import common.app.marketdata.HalfBook;

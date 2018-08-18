@@ -5,7 +5,7 @@ import common.connection.socket.SocketManager;
 import common.collection.FastQueue;
 import common.transport.messaging.Message;
 import common.app.marketdata.MarketDataType;
-import external.marketdata.MDSourceProvider;
+import core.marketdata.MDSourceProvider;
 
 import static common.app.marketdata.MarketDataType.L2;
 import static common.app.marketdata.MarketDataType.L3;

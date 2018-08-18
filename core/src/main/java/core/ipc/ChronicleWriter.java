@@ -1,4 +1,4 @@
-package external.ipc;
+package core.ipc;
 
 import common.transport.write.WireWriter;
 

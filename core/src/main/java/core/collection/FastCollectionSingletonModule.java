@@ -1,4 +1,4 @@
-package external.collection;
+package core.collection;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;

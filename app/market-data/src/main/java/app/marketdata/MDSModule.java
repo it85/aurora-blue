@@ -4,11 +4,11 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
 import com.google.inject.TypeLiteral;
 import common.connection.socket.ConnectionModule;
-import external.collection.FastCollectionSingletonModule;
-import external.connection.ExternalSocketModule;
-import external.ipc.IpcWriterModule;
-import external.marketdata.MDSourceProvider;
-import external.marketdata.MarketDataSourceModule;
+import core.collection.FastCollectionSingletonModule;
+import core.connection.ExternalSocketModule;
+import core.ipc.IpcWriterModule;
+import core.marketdata.MDSourceProvider;
+import core.marketdata.MarketDataSourceModule;
 
 public class MDSModule extends AbstractModule {
 

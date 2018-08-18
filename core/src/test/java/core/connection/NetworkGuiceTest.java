@@ -1,4 +1,4 @@
-package external.connection;
+package core.connection;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;

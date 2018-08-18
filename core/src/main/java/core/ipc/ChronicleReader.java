@@ -1,4 +1,4 @@
-package external.ipc;
+package core.ipc;
 
 import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;

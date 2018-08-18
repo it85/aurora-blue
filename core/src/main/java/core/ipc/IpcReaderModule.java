@@ -1,4 +1,4 @@
-package external.ipc;
+package core.ipc;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;

@@ -1,4 +1,4 @@
-package external.connection;
+package core.connection;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;

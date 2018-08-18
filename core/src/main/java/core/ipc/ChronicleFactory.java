@@ -1,4 +1,4 @@
-package external.ipc;
+package core.ipc;
 
 import net.openhft.chronicle.queue.ChronicleQueueBuilder;
 import net.openhft.chronicle.queue.ExcerptAppender;

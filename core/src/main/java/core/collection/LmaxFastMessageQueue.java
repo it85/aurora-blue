@@ -1,4 +1,4 @@
-package external.collection;
+package core.collection;
 
 import common.collection.FastQueue;
 import common.transport.messaging.Message;

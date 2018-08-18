@@ -1,4 +1,4 @@
-package external.marketdata;
+package core.marketdata;
 
 import com.google.inject.AbstractModule;
 
