@@ -5,7 +5,7 @@ import com.google.inject.TypeLiteral;
 import common.connection.socket.ConnectionModule;
 import common.connection.socket.Socket;
 
-public class ExternalSocketModule extends AbstractModule {
+public class SocketConnectionModule extends AbstractModule {
 
     @Override
     public void configure() {

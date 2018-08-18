@@ -5,7 +5,7 @@ import com.google.inject.Singleton;
 import com.google.inject.TypeLiteral;
 import common.connection.socket.ConnectionModule;
 import core.collection.FastCollectionSingletonModule;
-import core.connection.ExternalSocketModule;
+import core.connection.SocketConnectionModule;
 import core.ipc.IpcWriterModule;
 import core.marketdata.MDSourceProvider;
 import core.marketdata.MarketDataSourceModule;
@@ -17,7 +17,7 @@ public class MDSModule extends AbstractModule {
         install(new MarketDataSourceModule());
         install(new IpcWriterModule());
         install(new ConnectionModule());
-        install(new ExternalSocketModule());
+        install(new SocketConnectionModule());
         install(new FastCollectionSingletonModule());
 
         bind(new TypeLiteral<MDSourceProvider>() {
