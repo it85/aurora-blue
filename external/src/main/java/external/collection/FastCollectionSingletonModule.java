@@ -3,8 +3,8 @@ package external.collection;
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
 import com.google.inject.TypeLiteral;
-import common.core.collection.FastQueue;
-import common.core.message.Message;
+import common.collection.FastQueue;
+import common.transport.messaging.Message;
 
 public class FastCollectionSingletonModule extends AbstractModule {
 

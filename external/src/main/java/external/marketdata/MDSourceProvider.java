@@ -1,9 +1,9 @@
 package external.marketdata;
 
 import com.google.inject.Inject;
-import common.core.message.MessagingFactory;
-import common.marketdata.MDSource;
-import common.marketdata.MarketDataType;
+import common.transport.messaging.MessagingFactory;
+import common.app.marketdata.MDSource;
+import common.app.marketdata.MarketDataType;
 
 public final class MDSourceProvider {
 

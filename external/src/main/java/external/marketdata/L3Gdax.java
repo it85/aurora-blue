@@ -2,9 +2,9 @@ package external.marketdata;
 
 import com.google.inject.Inject;
 import common.connection.socket.SocketProtocol;
-import common.core.message.Message;
-import common.core.message.MessagingFactory;
-import common.marketdata.MDSource;
+import common.transport.messaging.Message;
+import common.transport.messaging.MessagingFactory;
+import common.app.marketdata.MDSource;
 
 public class L3Gdax implements MDSource, SocketProtocol {
 

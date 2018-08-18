@@ -1,8 +1,8 @@
 package app.marketdata;
 
 import com.google.inject.Inject;
-import common.core.collection.FastQueue;
-import common.core.message.Message;
+import common.collection.FastQueue;
+import common.transport.messaging.Message;
 import common.transport.write.WireWriter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

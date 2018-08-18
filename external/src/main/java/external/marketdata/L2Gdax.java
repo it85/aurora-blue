@@ -3,10 +3,10 @@ package external.marketdata;
 import com.google.gson.Gson;
 import com.google.inject.Inject;
 import common.connection.socket.SocketProtocol;
-import common.core.message.Message;
-import common.core.message.MessagingFactory;
-import common.marketdata.MDSource;
-import common.core.object.product.Instrument;
+import common.transport.messaging.Message;
+import common.transport.messaging.MessagingFactory;
+import common.app.marketdata.MDSource;
+import common.app.product.Instrument;
 
 final class L2Gdax implements MDSource, SocketProtocol {
 

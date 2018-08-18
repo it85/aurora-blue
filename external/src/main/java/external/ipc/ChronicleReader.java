@@ -2,8 +2,8 @@ package external.ipc;
 
 import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
-import common.core.message.Message;
-import common.core.message.MessagingFactory;
+import common.transport.messaging.Message;
+import common.transport.messaging.MessagingFactory;
 import common.transport.read.WireDataHandler;
 import common.transport.read.WireReader;
 import net.openhft.chronicle.bytes.Bytes;

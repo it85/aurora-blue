@@ -1,7 +1,7 @@
 package external.collection;
 
-import common.core.collection.FastQueue;
-import common.core.message.Message;
+import common.collection.FastQueue;
+import common.transport.messaging.Message;
 
 final class LmaxFastMessageQueue implements FastQueue<Message> {
 

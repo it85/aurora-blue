@@ -2,10 +2,10 @@ package app.marketdata;
 
 import com.google.inject.Inject;
 import common.connection.socket.SocketManager;
-import common.core.collection.FastQueue;
-import common.core.message.Message;
-import common.core.message.MessageHandler;
-import common.marketdata.MDSource;
+import common.collection.FastQueue;
+import common.transport.messaging.Message;
+import common.transport.messaging.MessageHandler;
+import common.app.marketdata.MDSource;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

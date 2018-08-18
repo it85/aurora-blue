@@ -10,12 +10,5 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>transport</module>
-        <module>core</module>
-        <module>connection</module>
-        <module>marketdata</module>
-    </modules>
 
 </project>

@@ -1,7 +1,7 @@
 package external.connection;
 
 import common.connection.socket.Socket;
-import common.core.message.MessageHandler;
+import common.transport.messaging.MessageHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.util.ssl.SslContextFactory;

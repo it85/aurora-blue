@@ -1,7 +1,7 @@
 package external.marketdata;
 
-import common.marketdata.Book;
-import common.marketdata.HalfBook;
+import common.app.marketdata.Book;
+import common.app.marketdata.HalfBook;
 
 import java.nio.ByteBuffer;
 

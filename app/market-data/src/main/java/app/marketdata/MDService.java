@@ -5,8 +5,7 @@ import com.google.inject.Inject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static common.marketdata.MarketDataType.L2;
-import static common.marketdata.MarketDataType.L3;
+import static common.app.marketdata.MarketDataType.L2;
 
 /**
  * Encapsulates, and initializes, multiple market data channels. This class is responsible for starting up enabled

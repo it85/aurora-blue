@@ -2,13 +2,13 @@ package app.marketdata;
 
 import com.google.inject.Inject;
 import common.connection.socket.SocketManager;
-import common.core.collection.FastQueue;
-import common.core.message.Message;
-import common.marketdata.MarketDataType;
+import common.collection.FastQueue;
+import common.transport.messaging.Message;
+import common.app.marketdata.MarketDataType;
 import external.marketdata.MDSourceProvider;
 
-import static common.marketdata.MarketDataType.L2;
-import static common.marketdata.MarketDataType.L3;
+import static common.app.marketdata.MarketDataType.L2;
+import static common.app.marketdata.MarketDataType.L3;
 
 final class MDChannelFactory {
 
