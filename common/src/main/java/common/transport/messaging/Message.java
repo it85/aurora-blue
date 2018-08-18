@@ -1,8 +1,10 @@
 package common.transport.messaging;
 
+import common.object.Serializable;
+
 import java.nio.ByteBuffer;
 
-public interface Message {
+public interface Message extends Serializable {
 
     /**
      * @return the message header
@@ -13,10 +15,5 @@ public interface Message {
      * @return the message payload
      */
     ByteBuffer payload();
-
-    /**
-     * @return the entire message, header included, as a {@link ByteBuffer}
-     */
-    ByteBuffer serialize();
 
 }

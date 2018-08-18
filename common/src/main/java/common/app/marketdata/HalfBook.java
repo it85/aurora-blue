@@ -2,18 +2,16 @@ package common.app.marketdata;
 
 import common.object.Serializable;
 
-public interface HalfBook extends Serializable {
+public interface HalfBook extends Serializable<HalfBook> {
 
-    void update(double price, double size);
-
-    double size(double price);
+    long size(long price);
 
     int size();
 
-    boolean empty();
+    boolean isEmpty();
 
-    double insidePrice();
+    long insidePrice();
 
-    double insideSize();
+    long insideSize();
 
 }

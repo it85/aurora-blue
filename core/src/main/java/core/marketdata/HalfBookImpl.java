@@ -1,47 +1,63 @@
 package core.marketdata;
 
+import com.google.inject.Inject;
 import common.app.marketdata.HalfBook;
+import common.app.marketdata.MutableHalfBook;
+import common.collection.map.LongLongMap;
 
 import java.nio.ByteBuffer;
 
-final class HalfBookImpl implements HalfBook {
+final class HalfBookImpl implements MutableHalfBook {
 
-    @Override
-    public void update(double price, double size) {
+    private final LongLongMap book;
 
+    @Inject
+    HalfBookImpl(LongLongMap map) {
+        this.book = map;
     }
 
     @Override
-    public double size(double price) {
-        return 0;
+    public void update(long price, long size) {
+        book.put(price, size);
+    }
+
+    @Override
+    public long size(long price) {
+        return book.get(price);
     }
 
     @Override
     public int size() {
+        return book.size();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return book.isEmpty();
+    }
+
+    @Override
+    public long insidePrice() {
         return 0;
     }
 
     @Override
-    public boolean empty() {
-        return false;
-    }
-
-    @Override
-    public double insidePrice() {
+    public long insideSize() {
         return 0;
     }
 
     @Override
-    public double insideSize() {
-        return 0;
-    }
-
-    void clear() {
-
+    public void clear() {
+        book.clear();
     }
 
     @Override
     public ByteBuffer serialize() {
         return null;
+    }
+
+    @Override
+    public void deserialize(HalfBook target) {
+
     }
 }

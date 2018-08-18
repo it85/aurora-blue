@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import static common.app.marketdata.MarketDataType.L2;
+import static common.app.marketdata.MarketDataType.L3;
 
 /**
  * Encapsulates, and initializes, multiple market data channels. This class is responsible for starting up enabled
@@ -15,7 +16,6 @@ final class MDService {
 
     private static final Logger LOG = LogManager.getLogger(MDChannel.class);
 
-    //    private final MDChannel level1;   // TODO: implement L1 at some point
     private final MDChannel level2;
 //    private final MDChannel level3;
 

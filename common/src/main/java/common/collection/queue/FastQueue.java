@@ -1,4 +1,4 @@
-package common.collection;
+package common.collection.queue;
 
 /**
  * A simple queue which offers concurrent READ and WRITE access.

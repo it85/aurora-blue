@@ -2,7 +2,7 @@ package app.marketdata;
 
 import com.google.inject.Inject;
 import common.app.marketdata.MarketDataType;
-import common.collection.FastQueue;
+import common.collection.queue.FastQueue;
 import common.connection.socket.SocketManager;
 import common.transport.messaging.Message;
 import core.marketdata.MDSourceProvider;
